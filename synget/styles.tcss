@@ -1,0 +1,135 @@
+Screen {
+    background: #080a0f;
+    color: #e2e8f0;
+}
+
+#banner {
+    height: 1;
+    padding: 0 2;
+    background: #0b0e15;
+}
+
+#banner-title {
+    width: 1fr;
+    height: 1;
+}
+
+#banner-path {
+    width: auto;
+    height: 1;
+    color: #475569;
+}
+
+#query {
+    margin: 1 2 0 2;
+    background: #0b0e15;
+    border: tall #1e2633;
+}
+
+#query:focus {
+    border: tall #67e8f9;
+}
+
+#notice {
+    height: 1;
+    margin: 0 2;
+    color: #94a3b8;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+#results {
+    display: none;
+    margin: 1 2 0 2;
+    height: auto;
+    max-height: 10;
+    padding: 0 1;
+    background: #0b0e15;
+    border: round #1e2633;
+}
+
+#results:focus {
+    border: round #67e8f9;
+}
+
+#results > .option-list--option-highlighted {
+    color: #f8fafc;
+    background: #164e63;
+}
+
+#results:focus > .option-list--option-highlighted {
+    color: #08111a;
+    background: #67e8f9;
+    text-style: bold;
+}
+
+#queue {
+    margin: 1 2;
+    height: 1fr;
+    scrollbar-size-vertical: 1;
+}
+
+#empty {
+    padding: 3 1;
+    color: #475569;
+    text-align: center;
+}
+
+JobRow {
+    height: 4;
+    padding: 0 1;
+    margin-bottom: 1;
+    background: #0b0e15;
+    border-left: thick #1e2633;
+}
+
+JobRow.active {
+    border-left: thick #67e8f9;
+}
+
+JobRow.done {
+    border-left: thick #34d399;
+}
+
+JobRow.error {
+    border-left: thick #f87171;
+}
+
+.job-title {
+    height: 1;
+    color: #f8fafc;
+    text-style: bold;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+.job-status {
+    height: 1;
+    color: #64748b;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+JobRow ProgressBar {
+    height: 1;
+    width: 100%;
+    margin: 0;
+}
+
+JobRow ProgressBar Bar {
+    width: 100%;
+}
+
+JobRow ProgressBar Bar > .bar--bar {
+    color: #67e8f9;
+    background: #1e2633;
+}
+
+JobRow ProgressBar Bar > .bar--complete {
+    color: #34d399;
+    background: #1e2633;
+}
+
+Footer {
+    background: #0b0e15;
+}

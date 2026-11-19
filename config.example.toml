@@ -1,0 +1,15 @@
+# Configuración de SYNGET
+# Copia este archivo en ~/.config/synget/config.toml y ajusta lo que quieras.
+
+# Carpeta donde se guardan las canciones (SYN la lee automáticamente).
+music_dir = "~/Musica"
+
+# Formato del audio: "mp3", "m4a" u "opus".
+format = "mp3"
+
+# Calidad para mp3 (kbps). "0" usa VBR de la mejor calidad.
+quality = "192"
+
+# Si YouTube pide verificación, usa las cookies de tu navegador:
+# "firefox", "chrome", "chromium", "brave", "edge"… Déjalo vacío para no usarlas.
+cookies_from_browser = ""

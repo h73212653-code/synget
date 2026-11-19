@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Lanzador de SYNGET: usa su propio entorno virtual.
+set -euo pipefail
+SOURCE="$(readlink -f "${BASH_SOURCE[0]}")"
+ROOT="$(cd "$(dirname "$SOURCE")/.." && pwd)"
+export PYTHONPATH="$ROOT${PYTHONPATH:+:$PYTHONPATH}"
+exec "$ROOT/.venv/bin/python" -m synget "$@"
